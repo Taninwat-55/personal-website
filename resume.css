@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f1f1f1;
+    flex-wrap: wrap; /* Allow header elements to wrap if needed */
+}
+
+p, li {
+    line-height: 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the nav items */
+}
+
+nav li {
+    margin: 0.5rem; /* Reduce margin around nav items */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+main {
+    padding: 1rem; /* Reduced padding for smaller screens */
+}
+
+section {
+    margin-bottom: 1rem; /* Reduced margin between sections */
+}
+
+#intro { /* Styles for the intro section */
+    display: flex;
+    flex-wrap: wrap; /* Let the image and content wrap if needed */
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between image and content */
+}
+
+#intro img { 
+    width: 10%; 
+    height: auto;  
+    max-width: 100%; 
+    border: grey solid 3px;
+    border-radius: 50%;
+}
+
+#language, #technical_skills, #soft_skills { 
+    column-count: 2;  
+    column-gap: 20px; 
+}
+
+.certificate {
+    text-align: center;
+}
+
+section img {
+    width: 15%;     /* Adjust as needed, make more prominent on smaller screens */
+    height: auto;  
+    max-width: 100%; 
+    border: grey solid 3px;
+    border-radius: 50%;
+}
+
+button {
+    background-color: #4CAF50;  /* Example: Green background */
+    color: white;              
+    padding: 15px 30px;         /* Increase padding  */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;           /* Optionally, change font size */
+    border-radius: 8px;         /* Add a slight border curve */
+    border: none;               /* Remove default border */
+    cursor: pointer;            /* Indicate that it's clickable */
+    font-family: "Gill Sans", sans-serif;
+}
+
+#language, #technical_skills, #soft_skills {
+    column-count: 2;  
+    column-gap: 20px; 
+}
+
+@media (max-width: 768px) { 
+    #intro img {
+        width: 45%; /* Image takes up more space on smaller screens */
+    }
+
+    #language, #technical_skills, #soft_skills { 
+        column-count: 1; 
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+    }
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 1px;
+}
+
+.footer-container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    flex-wrap: wrap; /* Allow footer elements to wrap if space gets tight */
+}
+
+.footer_logo {
+    display: inline-block;
+    border-radius: 20%;
+    margin-left: 1%;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.social-links a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;  /* This centers the image vertically within the div */
+    margin-right: 1px;
+}
+
+.social-links a img {
+    width: 50%; /* This scales the image to fit the width and height of the div */
+    height: 50%;
+  }
