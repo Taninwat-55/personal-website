@@ -1,0 +1,266 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(90deg, #5170ff, #ff66c4);
+    background-size: 180% 180%;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3vw
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.section-heading h2 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.project-item {
+    padding: 2rem;
+    margin: 1rem 0;
+    border: 2px solid #6b31dd;
+    background-color: azure;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+.project-item, li {
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.project-img {
+    width: 80%;
+    max-width: 400px;
+    margin: 10px auto;
+}
+
+.project1-img img,
+.project2-img img,
+.project3-img img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid black;
+}
+
+.contact-btn {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap: 1rem;
+}
+
+.contact-btn a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    background-color: #6b31dd;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3vw;
+    text-align: center;
+}
+
+.social-logo {
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.social-logo img {
+    height: 2rem;
+}
+
+.contact-email a{
+    text-decoration: none;
+    color: black;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(90deg, #5170ff, #ff66c4);
+    background-size: 180% 180%;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3vw;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.section-heading h2 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.project-item {
+    padding: 2rem;
+    margin: 1rem 0;
+    border: 2px solid #6b31dd;
+    background-color: azure;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+.project-item, li {
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+/* Carousel Styles */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    display: flex;
+    animation: slide 15s infinite;
+}
+
+.carousel img {
+    width: 100%;
+    flex: 0 0 100%;
+    height: auto;
+    object-fit: fill;
+    border: 2px solid black;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+}
+
+.project-link {
+    margin: 1rem;
+}
+
+.contact-btn {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    gap: 1rem;
+}
+
+.contact-btn a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    background-color: #6b31dd;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3vw;
+    text-align: center;
+}
+
+.social-logo {
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.social-logo img {
+    height: 2rem;
+}
+
+.contact-email a{
+    text-decoration: none;
+    color: black;
+}
